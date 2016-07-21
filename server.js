@@ -10,6 +10,6 @@ app.get('/', function (req, res) {
 	res.send(headerObj);
 });
 
-app.listen(80, function () {
-  console.log('Example app listening on port 80!');
+app.listen(process.env.PORT || 80, function () {
+  console.log('Example app listening on port' + process.env.PORT + '.');
 });
